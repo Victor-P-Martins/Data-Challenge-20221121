@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  api_challenge:
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    container_name: api_challenge
+    image: api_challenge
+    ports:
+      - "8000:8000"
+    restart: always
